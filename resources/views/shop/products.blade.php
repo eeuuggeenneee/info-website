@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="light scroll-smooth" dir="ltr">
     
-<!-- Mirrored from shreethemes.in/techwind/layouts/shop-grid-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jul 2023 08:29:52 GMT -->
 <head>
         <meta charset="UTF-8">
         <title>Techwind - Tailwind CSS Multipurpose Landing Page Template</title>
@@ -865,5 +864,4 @@
         <!-- JAVASCRIPTS -->
     </body>
 
-<!-- Mirrored from shreethemes.in/techwind/layouts/shop-grid-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jul 2023 08:29:52 GMT -->
 </html>

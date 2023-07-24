@@ -28,3 +28,8 @@ Route::get('/products', function () {
 Route::get('/contact-us', function () {
     return view('shop.contact');
 })->name('contact');
+
+
+Route::get('/product/details', function () {
+    return view('shop.product-details');
+})->name('product');

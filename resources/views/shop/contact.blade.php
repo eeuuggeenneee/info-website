@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="light scroll-smooth" dir="ltr">
 
-<!-- Mirrored from shreethemes.in/techwind/layouts/contact-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jul 2023 08:30:02 GMT -->
 
 <head>
     <meta charset="UTF-8">
@@ -513,6 +512,5 @@
     <!-- JAVASCRIPTS -->
 </body>
 
-<!-- Mirrored from shreethemes.in/techwind/layouts/contact-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jul 2023 08:30:03 GMT -->
 
 </html>
