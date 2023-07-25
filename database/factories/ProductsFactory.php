@@ -18,12 +18,24 @@ class ProductsFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->words(3, true),
-            'description' => $this->faker->paragraph,
-            'cost' => $this->faker->randomFloat(2, 1, 100),
-            'price' => $this->faker->randomFloat(2, 1, 100),
-            'image_url' => $this->faker->imageUrl(),
+            'name' => $this->faker->randomElement([
+                'Cardiac Monitor',
+                'MRI Machine',
+                'CT Scan Machine',
+                'Ultrasound Machine',
+                'Defibrillator',
+                'Respiratory Ventilator',
+                'X-Ray Machine',
+                'Anesthesia Machine',
+                'Dialysis Machine',
+                'Surgical Laser Machine'
+            ]),
+            'description' => $this->faker->realText(200), // Generates "real" text of a given length.
+            'cost' => $this->faker->randomFloat(2, 1000, 10000), // Cost between 1000 and 10000.
+            'price' => $this->faker->randomFloat(2, 1500, 15000), // Price between 1500 and 15000.
+            'image_url' => $this->faker->imageUrl(), // This still generates a random image. It's hard to generate specific images with Faker.
             'images' => [$this->faker->imageUrl(), $this->faker->imageUrl()],
         ];
+        
     }
 }
