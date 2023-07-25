@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +30,6 @@ Route::get('/contact-us', function () {
 })->name('contact');
 
 
-Route::get('/products/details', function () {
-    return view('shop.product-details');
-})->name('details');
+//Route::get('/product/details/{id}', 'ProductController@show')->name('details');
+
+Route::get('/product/details/{id}', [ProductController::class, 'show'])->name('details');

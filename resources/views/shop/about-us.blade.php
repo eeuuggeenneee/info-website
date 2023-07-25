@@ -533,6 +533,51 @@
         <script src="{{asset('assets/js/plugins.init.js')}}"></script>
         <script src="{{asset('assets/js/app.js')}}"></script>
         <!-- JAVASCRIPTS -->
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                // Theme toggle
+                if (localStorage.getItem('theme') === 'dark') {
+                    document.documentElement.classList.add('dark');
+                    document.getElementById('chk').checked = true;
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+        
+                // Direction toggle
+                if (localStorage.getItem('direction') === 'rtl') {
+                    document.documentElement.setAttribute('dir', 'rtl');
+                    document.getElementById('directionText').textContent = 'RTL';
+                } else {
+                    document.documentElement.setAttribute('dir', 'ltr');
+                    document.getElementById('directionText').textContent = 'LTR';
+                }
+            });
+        
+            document.getElementById('chk').addEventListener('change', function(event) {
+                if (this.checked) {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.classList.add('dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.classList.remove('dark');
+                }
+            });
+        
+            document.getElementById('switchRtl').addEventListener('click', function(event) {
+                event.preventDefault();
+                if (document.documentElement.getAttribute('dir') === 'ltr') {
+                    localStorage.setItem('direction', 'rtl');
+                    document.documentElement.setAttribute('dir', 'rtl');
+                    document.getElementById('directionText').textContent = 'RTL';
+                } else {
+                    localStorage.setItem('direction', 'ltr');
+                    document.documentElement.setAttribute('dir', 'ltr');
+                    document.getElementById('directionText').textContent = 'LTR';
+                }
+            });
+        </script>
+        
+        
     </body>
 
 </html>

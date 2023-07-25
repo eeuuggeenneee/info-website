@@ -6,7 +6,7 @@
                     <img src="{{ $product->image_url }}" alt="{{ $product->name }}">
     
                     <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 transition-all duration-500">
-                        <a href="#" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">Add to Cart</a>
+                        <a href="{{ route('details', ['id' => $product->id]) }}" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">View item</a>
                     </div>
 
                     <!-- Additional elements go here -->

@@ -285,35 +285,12 @@
             <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px] items-center">
                 <div class="lg:col-span-5 md:col-span-6">
                     <div class="tiny-single-item">
+                        @foreach($product->images as $image)
                         <div class="tiny-slide">
-                            <img src="{{ asset('assets/images/shop/single/single-2.jpg') }}"
-                                class="rounded-md shadow dark:shadow-gray-800" alt="">
+                            <img src="{{ $image }}" class="rounded-md shadow dark:shadow-gray-800" alt="">
                         </div>
                         <!--end content-->
-
-                        <div class="tiny-slide">
-                            <img src="{{ asset('assets/images/shop/single/single-3.jpg') }}"
-                                class="rounded-md shadow dark:shadow-gray-800" alt="">
-                        </div>
-                        <!--end content-->
-
-                        <div class="tiny-slide">
-                            <img src="{{ asset('assets/images/shop/single/single-4.jpg') }}"
-                                class="rounded-md shadow dark:shadow-gray-800" alt="">
-                        </div>
-                        <!--end content-->
-
-                        <div class="tiny-slide">
-                            <img src="{{ asset('assets/images/shop/single/single-5.jpg') }}"
-                                class="rounded-md shadow dark:shadow-gray-800" alt="">
-                        </div>
-                        <!--end content-->
-
-                        <div class="tiny-slide">
-                            <img src="{{ asset('assets/images/shop/single/single-6.jpg') }}"
-                                class="rounded-md shadow dark:shadow-gray-800" alt="">
-                        </div>
-                        <!--end content-->
+                        @endforeach
                     </div>
                     <!--end tiny slider-->
                 </div>
@@ -321,26 +298,17 @@
 
                 <div class="lg:col-span-7 md:col-span-6">
                     <div class="lg:ms-6">
-                        <h5 class="text-2xl font-semibold">Branded T-Shirts</h5>
+                        <h5 class="text-2xl font-semibold">{{ $product->name }}</h5>
                         <div class="mt-2">
-                            <span class="text-slate-400 font-semibold me-1">$16USD <del
-                                    class="text-red-600">$21USD</del></span>
+                            <span class="text-slate-400 font-semibold me-1">{{ $product->price }} <del
+                                    class="text-red-600">{{ $product->cost }}</del></span>
 
-                            <ul class="list-none inline-block text-orange-400">
-                                <li class="inline"><i class="mdi mdi-star text-lg"></i></li>
-                                <li class="inline"><i class="mdi mdi-star text-lg"></i></li>
-                                <li class="inline"><i class="mdi mdi-star text-lg"></i></li>
-                                <li class="inline"><i class="mdi mdi-star text-lg"></i></li>
-                                <li class="inline"><i class="mdi mdi-star text-lg"></i></li>
-                                <li class="inline text-slate-400 font-semibold">4.8 (45)</li>
-                            </ul>
+                           
                         </div>
 
                         <div class="mt-4">
                             <h5 class="text-lg font-semibold">Overview :</h5>
-                            <p class="text-slate-400 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Vero exercitationem, unde molestiae sint quae inventore atque minima natus fugiat nihil
-                                quisquam voluptates ea omnis. Modi laborum soluta tempore unde accusantium.</p>
+                            <p class="text-slate-400 mt-2">{{ $product->description }}</p>
 
                             <ul class="list-none text-slate-400 mt-4">
                                 <li class="mb-1 flex"><i
@@ -355,7 +323,7 @@
                             </ul>
                         </div>
 
-                        <div class="grid lg:grid-cols-2 grid-cols-1 gap-[30px] mt-4">
+                        {{-- <div class="grid lg:grid-cols-2 grid-cols-1 gap-[30px] mt-4">
                             <div class="flex items-center">
                                 <h5 class="text-lg font-semibold me-2">Size:</h5>
                                 <div class="">
@@ -383,17 +351,17 @@
                                 </div>
                             </div>
                             <!--end content-->
-                        </div>
+                        </div> --}}
                         <!--end grid-->
 
-                        <div class="mt-4">
+                        {{-- <div class="mt-4">
                             <a href="#"
                                 class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Shop
                                 Now</a>
                             <a href="#"
                                 class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center rounded-md bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white mt-2">Add
                                 to Cart</a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -431,13 +399,7 @@
                     <div id="myTabContent"
                         class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md">
                         <div class="" id="description" role="tabpanel" aria-labelledby="profile-tab">
-                            <p class="text-slate-400">Due to its widespread use as filler text for layouts,
-                                non-readability is of great importance: human perception is tuned to recognize certain
-                                patterns and repetitions in texts. If the distribution of letters and 'words' is random,
-                                the reader will not be distracted from making a neutral judgement on the visual impact
-                                and readability of the typefaces (typography), or the distribution of text on the page
-                                (layout or type area). For this reason, dummy text usually consists of a more or less
-                                random series of words or syllables.</p>
+                            <p class="text-slate-400">{{ $product->description }}</p>
                         </div>
 
                         <div class="hidden" id="addinfo" role="tabpanel" aria-labelledby="addinfo-tab">
@@ -465,7 +427,8 @@
                         </div>
 
                         <div class="hidden" id="review" role="tabpanel" aria-labelledby="review-tab">
-                            <div>
+                            REVIEW
+                            {{-- <div>
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <img src="assets/images/client/01.jpg" class="h-11 w-11 rounded-full shadow"
@@ -498,9 +461,9 @@
                                         Ipsum available, but the majority have suffered alteration in some form, by
                                         injected humour "</p>
                                 </div>
-                            </div>
+                            </div> --}}
 
-                            <div class="mt-8">
+                            {{-- <div class="mt-8">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <img src="assets/images/client/02.jpg" class="h-11 w-11 rounded-full shadow"
@@ -533,9 +496,9 @@
                                         Ipsum available, but the majority have suffered alteration in some form, by
                                         injected humour "</p>
                                 </div>
-                            </div>
+                            </div> --}}
 
-                            <div class="mt-8">
+                            {{-- <div class="mt-8">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <img src="assets/images/client/03.jpg" class="h-11 w-11 rounded-full shadow"
@@ -568,9 +531,9 @@
                                         Ipsum available, but the majority have suffered alteration in some form, by
                                         injected humour "</p>
                                 </div>
-                            </div>
+                            </div> --}}
 
-                            <div class="mt-8">
+                            {{-- <div class="mt-8">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <img src="assets/images/client/04.jpg" class="h-11 w-11 rounded-full shadow"
@@ -653,7 +616,7 @@
                                         class="py-2 px-5 inline-block tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full">Send
                                         Message</button>
                                 </form>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -664,11 +627,11 @@
 
         <div class="container relative mt-16">
             <div class="grid grid-cols-1 items-center">
-                <h3 class="text-2xl leading-normal font-semibold">Recent Products</h3>
+                <h3 class="text-2xl leading-normal font-semibold">Popular Products</h3>
             </div>
             <!--end grid-->
 
-            <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+             {{-- <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
                 <div class="group">
                     <div
                         class="relative overflow-hidden shadow dark:shadow-gray-800 group-hover:shadow-lg group-hover:dark:shadow-gray-800 rounded-md transition-all duration-500">
@@ -834,7 +797,9 @@
                     </div>
                 </div>
                 <!--end content-->
-            </div>
+            </div>  --}}
+
+            @livewire('popular-products')
             <!--end grid-->
         </div>
         <!--end container-->
@@ -1139,6 +1104,50 @@
     <script src="{{ asset('assets/libs/feather-icons/feather.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins.init.js') }}"></script>
     <script src="{{ asset('assets/js/app.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Theme toggle
+            if (localStorage.getItem('theme') === 'dark') {
+                document.documentElement.classList.add('dark');
+                document.getElementById('chk').checked = true;
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+    
+            // Direction toggle
+            if (localStorage.getItem('direction') === 'rtl') {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.getElementById('directionText').textContent = 'RTL';
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.getElementById('directionText').textContent = 'LTR';
+            }
+        });
+    
+        document.getElementById('chk').addEventListener('change', function(event) {
+            if (this.checked) {
+                localStorage.setItem('theme', 'dark');
+                document.documentElement.classList.add('dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    
+        document.getElementById('switchRtl').addEventListener('click', function(event) {
+            event.preventDefault();
+            if (document.documentElement.getAttribute('dir') === 'ltr') {
+                localStorage.setItem('direction', 'rtl');
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.getElementById('directionText').textContent = 'RTL';
+            } else {
+                localStorage.setItem('direction', 'ltr');
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.getElementById('directionText').textContent = 'LTR';
+            }
+        });
+    </script>
+    
     <!-- JAVASCRIPTS -->
 </body>
 

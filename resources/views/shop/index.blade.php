@@ -634,10 +634,10 @@
         <!-- LTR & RTL Mode Code -->
         <div class="fixed top-[40%] -right-3 z-50">
             <a href="#" id="switchRtl">
-                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold rtl:block ltr:hidden" >LTR</span>
-                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold ltr:block rtl:hidden">RTL</span>
+                <span id="directionText" class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold">LTR</span>
             </a>
         </div>
+        
         <!-- LTR & RTL Mode Code -->
 
         <!-- JAVASCRIPTS -->
@@ -647,6 +647,54 @@
         <script src="{{asset('assets/libs/feather-icons/feather.min.js')}}"></script>
         <script src="{{asset('assets/js/plugins.init.js')}}"></script>
         <script src="{{asset('assets/js/app.js')}}"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                // Theme toggle
+                if (localStorage.getItem('theme') === 'dark') {
+                    document.documentElement.classList.add('dark');
+                    document.getElementById('chk').checked = true;
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+        
+                // Direction toggle
+                if (localStorage.getItem('direction') === 'rtl') {
+                    document.documentElement.setAttribute('dir', 'rtl');
+                    document.getElementById('directionText').textContent = 'RTL';
+                } else {
+                    document.documentElement.setAttribute('dir', 'ltr');
+                    document.getElementById('directionText').textContent = 'LTR';
+                }
+            });
+        
+            document.getElementById('chk').addEventListener('change', function(event) {
+                if (this.checked) {
+                    localStorage.setItem('theme', 'dark');
+                    document.documentElement.classList.add('dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    document.documentElement.classList.remove('dark');
+                }
+            });
+        
+            document.getElementById('switchRtl').addEventListener('click', function(event) {
+                event.preventDefault();
+                if (document.documentElement.getAttribute('dir') === 'ltr') {
+                    localStorage.setItem('direction', 'rtl');
+                    document.documentElement.setAttribute('dir', 'rtl');
+                    document.getElementById('directionText').textContent = 'RTL';
+                } else {
+                    localStorage.setItem('direction', 'ltr');
+                    document.documentElement.setAttribute('dir', 'ltr');
+                    document.getElementById('directionText').textContent = 'LTR';
+                }
+            });
+        </script>
+        
+        
+        
+       
+        
         <!-- JAVASCRIPTS -->
     </body>
 
