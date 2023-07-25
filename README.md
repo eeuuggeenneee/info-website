@@ -14,17 +14,19 @@ How to run this project:
 4. Install npm
     >npm install
 
-5. generate an app key
+5. Generate an app key
     >php artisan key:generate
   
-6. migrate the database and generate random data
+6. Migrate the database
     >php artisan migrate
+
+7. Generate random data
     >php artisan db:seed
 
-6. run the project
+8. Run the project
     >php artisan serve
 
-6. on an other terminal:
+9. on an other terminal:
     >npm run dev
   
 
