@@ -12,7 +12,9 @@ class ProductsTable extends Component
 
     public $sort = 'latest'; // This will be bound to the select input
 
+    public $search = ''; // This will be bound to the search input
     public function updatingSort()
+
     {
         $this->resetPage();
     }
@@ -21,6 +23,11 @@ class ProductsTable extends Component
     {
         // Create the base query
         $query = Products::query();
+
+        // Apply search
+        if ($this->search !== '') {
+            $query->where('name', 'like', '%' . $this->search . '%');
+        }
 
         // Apply sorting
         switch ($this->sort) {

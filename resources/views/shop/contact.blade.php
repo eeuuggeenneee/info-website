@@ -69,7 +69,7 @@
             </div>
 
             <!--Login button Start-->
-            <ul class="buy-button list-none mb-0">
+            {{-- <ul class="buy-button list-none mb-0">
                 <li class="inline mb-0">
                     <a href="#">
                         <span class="login-btn-primary"><span
@@ -91,7 +91,7 @@
                                     data-feather="shopping-cart" class="h-4 w-4"></i></span></div>
                     </a>
                 </li>
-            </ul>
+            </ul> --}}
             <!--Login button End-->
 
             <div id="navigation">

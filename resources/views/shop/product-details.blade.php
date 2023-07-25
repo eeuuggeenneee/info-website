@@ -65,7 +65,7 @@
             </div>
 
             <!--Login button Start-->
-            <ul class="buy-button list-none mb-0">
+            {{-- <ul class="buy-button list-none mb-0">
                 <li class="dropdown inline-block relative me-1">
                     <button data-dropdown-toggle="dropdown" class="dropdown-toggle text-[20px]" type="button">
                         <i class="uil uil-search align-middle"></i>
@@ -194,7 +194,7 @@
                         </ul>
                     </div>
                 </li>
-            </ul>
+            </ul> --}}
             <!--Login button End-->
 
             <div id="navigation">

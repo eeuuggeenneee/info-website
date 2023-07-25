@@ -63,7 +63,7 @@
                 </div>
 
                 <!--Login button Start-->
-                <ul class="buy-button list-none mb-0">
+                {{-- <ul class="buy-button list-none mb-0">
                     <li class="dropdown inline-block relative me-1">
                         <button data-dropdown-toggle="dropdown" class="dropdown-toggle text-[20px]" type="button">
                             <i class="uil uil-search align-middle"></i>
@@ -78,9 +78,7 @@
                     </li>
 
                     <li class="dropdown inline-block relative">
-                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white" type="button">
-                            <i class="mdi mdi-cart"></i>
-                        </button>
+                       
                         <!-- Dropdown menu -->
                         <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-60 rounded-md bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
                             <ul class="py-3 text-start" aria-labelledby="dropdownDefault">
@@ -172,7 +170,7 @@
                             </ul>
                         </div>
                     </li>
-                </ul>
+                </ul> --}}
                 <!--Login button End-->
 
                 <div id="navigation">

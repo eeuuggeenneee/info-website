@@ -64,7 +64,7 @@
                 </div>
 
                 <!--Login button Start-->
-                <ul class="buy-button list-none mb-0">
+                {{-- <ul class="buy-button list-none mb-0">
                     <li class="dropdown inline-block relative me-1">
                         <button data-dropdown-toggle="dropdown" class="dropdown-toggle text-[20px]" type="button">
                             <i class="uil uil-search align-middle"></i>
@@ -173,7 +173,7 @@
                             </ul>
                         </div>
                     </li>
-                </ul>
+                </ul> --}}
                 <!--Login button End-->
 
                 <div id="navigation">
@@ -241,158 +241,7 @@
 
         <!-- Start -->
         <section class="relative md:py-24 py-16">
-            <div class="container">
-                <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
-                    <div class="lg:col-span-4 md:col-span-6">
-                        <div class="shadow dark:shadow-gray-800 p-6 rounded-md bg-white dark:bg-slate-900 sticky top-20">
-                            <form>
-                                <div class="grid grid-cols-1 gap-3">
-                                    <div>
-                                        <label for="searchname" class="hidden font-semibold"></label>
-                                        <div class="relative">
-                                            <i data-feather="search" class="w-4 h-4 absolute top-3 start-3"></i>
-                                        
-                                            <input name="search" id="searchname" type="text" class="form-input w-full py-2 px-3 h-10 ps-9 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Search">
-                                        </div>
-                                    </div>
-                                    
-                                    <div>
-                                        <label class="font-semibold">Categories</label>
-                                        <div class="block mt-2">
-                                            <div>
-                                                <label class="inline-flex items-center">
-                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1" checked>
-                                                    <span class="text-slate-400">Men</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="block mt-2">
-                                            <div>
-                                                <label class="inline-flex items-center">
-                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
-                                                    <span class="text-slate-400">Women</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="block mt-2">
-                                            <div>
-                                                <label class="inline-flex items-center">
-                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
-                                                    <span class="text-slate-400">Kid.s Wear</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="block mt-2">
-                                            <div>
-                                                <label class="inline-flex items-center">
-                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
-                                                    <span class="text-slate-400">Sports</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="block mt-2">
-                                            <div>
-                                                <label class="inline-flex items-center">
-                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
-                                                    <span class="text-slate-400">Jewellery</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="block mt-2">
-                                            <div>
-                                                <label class="inline-flex items-center">
-                                                    <input type="radio" class="form-radio border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" name="radio-colors" value="1">
-                                                    <span class="text-slate-400">Electronics</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div>
-                                        <label class="font-semibold">Top Products</label>
-                                        <div class="block mt-2">
-                                            <span class="flex items-center">
-                                                <img src="../../assets/images/shop/items/s1.html" class="rounded shadow dark:shadow-gray-800 w-12" alt="">
-                                                <span class="ms-3">
-                                                    <span class="block font-semibold">T-shirt (M)</span>
-                                                    <span class="block text-sm text-slate-400">$16USD</span>
-                                                </span>
-                                            </span>
-                                        </div>
-
-                                        <div class="block mt-2">
-                                            <span class="flex items-center">
-                                                <img src="../../assets/images/shop/items/s2.html" class="rounded shadow dark:shadow-gray-800 w-12" alt="">
-                                                <span class="ms-3">
-                                                    <span class="block font-semibold">Bag</span>
-                                                    <span class="block text-sm text-slate-400">$16USD</span>
-                                                </span>
-                                            </span>
-                                        </div>
-
-                                        <div class="block mt-2">
-                                            <span class="flex items-center">
-                                                <img src="../../assets/images/shop/items/s3.html" class="rounded shadow dark:shadow-gray-800 w-12" alt="">
-                                                <span class="ms-3">
-                                                    <span class="block font-semibold">Watch (Men)</span>
-                                                    <span class="block text-sm text-slate-400">$16USD</span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-2">
-                                        <input type="submit" class="py-2 px-5 inline-block tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full" value="Apply Filter">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="lg:col-span-8 md:col-span-6">
-                        @livewire('products-table')
-              
-                        {{-- <div class="grid md:grid-cols-12 grid-cols-1 mt-8">
-                            <div class="md:col-span-12 text-center">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="inline-flex items-center -space-x-px">
-                                        <li>
-                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
-                                                <i class="uil uil-angle-left text-[20px] rtl:rotate-180 rtl:-mt-1"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" aria-current="page" class="z-10 w-[40px] h-[40px] inline-flex justify-center items-center text-white bg-indigo-600 border border-indigo-600">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">4</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">5</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-lg hover:text-white border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
-                                                <i class="uil uil-angle-right text-[20px] rtl:rotate-180 rtl:-mt-1"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div><!--end grid--> --}}
-                    </div>
-                </div>
-            </div><!--end container-->
+            @livewire('products-table')
 
             <div class="container relative md:mt-24 mt-16">
                 <div class="grid md:grid-cols-12 grid-cols-1 items-center">
