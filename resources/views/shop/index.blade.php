@@ -99,7 +99,10 @@
         <section class="relative mt-20">
             <div class="container-fluid relative">
                 <div class="relative py-48 table w-full shadow-md overflow-hidden">
-                    <div class="absolute inset-0 bg-[url('../../assets/images/shop/bg.html')] bg-no-repeat md:bg-left bg-center bg-cover"></div>
+    
+                    <div class="absolute inset-0 bg-[url{{asset('assets/images/construction/1.jpg')}}] bg-no-repeat md:bg-left bg-center bg-cover">
+                        <img src="{{asset('assets/images/740142.jpg')}}" alt="">
+                    </div>
                     <div class="absolute inset-0 bg-slate-950/30"></div>
                     <div class="container relative">
                         <div class="grid grid-cols-1">
@@ -223,9 +226,11 @@
         </section>
     
 
-        <section class="py-28 w-full table relative bg-[url('../../assets/images/shop/cta.html')] bg-center bg-no-repeat bg-cover jarallax" data-jarallax data-speed="0.5">
-            <div class="absolute inset-0 bg-slate-900/30"></div>
+        <section class="py-28 w-full table relative bg-center bg-no-repeat bg-cover jarallax" style="background-image: url('{{asset('assets/images/bg.jpg')}}');" data-jarallax data-speed="0.5">
+            <div class="absolute inset-0 bg-slate-900/30">
+            </div>
             <div class="container relative">
+                
                 <div class="grid grid-cols-1 text-center">
                     <h3 class="mb-4 md:text-4xl text-3xl text-white font-bold">End of Season Clearance <br> Sale upto 30%</h3>
 
@@ -236,6 +241,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
         <section class="relative py-16">

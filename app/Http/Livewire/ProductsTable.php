@@ -19,6 +19,23 @@ class ProductsTable extends Component
         $this->resetPage();
     }
 
+
+    public function gotoPage($page)
+    {
+        $this->setPage($page);
+    }
+    public function previousPage()
+    {
+        if ($this->page > 1) {
+            $this->setPage($this->page - 1);
+        }
+    }
+    public function nextPage()
+    {
+        if ($this->page > 1) {
+            $this->setPage($this->page + 1);
+        }
+    }
     public function render()
     {
 
@@ -48,21 +65,5 @@ class ProductsTable extends Component
         return view('livewire.products-table', [
             'products' => $products,
         ]);
-    }
-    public function gotoPage($page)
-    {
-        $this->setPage($page);
-    }
-    public function previousPage()
-    {
-        if ($this->page > 1) {
-            $this->setPage($this->page - 1);
-        }
-    }
-    public function nextPage()
-    {
-        if ($this->page > 1) {
-            $this->setPage($this->page + 1);
-        }
     }
 }
