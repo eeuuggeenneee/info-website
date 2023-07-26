@@ -9,7 +9,6 @@
                         <a href="{{ route('details', ['id' => $product->id]) }}" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">View item</a>
                     </div>
 
-                    <!-- Additional elements go here -->
                 </div>
     
                 <div class="mt-4">

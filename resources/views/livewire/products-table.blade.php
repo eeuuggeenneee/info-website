@@ -139,11 +139,7 @@
                             <a href="{{ route('details', ['id' => $product->id]) }}" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-slate-900 border-slate-900 text-white w-full rounded-md">View Item</a>
                         </div>
 
-                        {{-- <ul class="list-none absolute top-[10px] end-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                            <li><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-heart"></i></a></li>
-                            <li class="mt-1"><a href="shop-item-detail.html" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-eye-outline"></i></a></li>
-                            <li class="mt-1"><a href="javascript:void(0)" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i class="mdi mdi-bookmark-outline"></i></a></li>
-                        </ul> --}}
+           
 
                         <ul class="list-none absolute top-[10px] start-4">
                             <li><a href="javascript:void(0)" class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5">New</a></li>
@@ -157,17 +153,16 @@
                             
                         </div>
                     </div>
-                </div><!--end content-->
+                </div>
                 @endforeach
 
                 
-            </div><!--end grid-->
+            </div>
 
             <div class="grid md:grid-cols-12 grid-cols-1 mt-8">
                 <div class="md:col-span-12 text-center">
                     <nav aria-label="Page navigation example">
                         <ul class="inline-flex items-center -space-x-px">
-                            <!-- Previous Page Link -->
                             @if ($products->onFirstPage())
                                 <li>
                                     <a
@@ -183,13 +178,11 @@
                                     </a>
                                 </li>
                             @endif
-                            <!-- Go to First Page -->
                             <li>
                                 <a wire:click.prevent="gotoPage(1)"
                                     class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">First</a>
                             </li>
         
-                            <!-- Pagination Elements -->
                             @php
                                 $start = max($products->currentPage() - 2, 1);
                                 $end = min($products->currentPage() + 2, $products->lastPage());
@@ -206,13 +199,11 @@
                                 </li>
         
                             @endforeach
-                            <!-- Go to Last Page -->
                             <li>
                                 <a wire:click.prevent="gotoPage({{ $products->lastPage() }})"
                                     class="w-[40px] h-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">Last</a>
                             </li>
         
-                            <!-- Next Page Link -->
                             @if ($products->hasMorePages())
                                 <li>
                                     <a wire:click="nextPage"
@@ -235,4 +226,4 @@
         
         </div>
     </div>
-</div><!--end container-->
+</div>

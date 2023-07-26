@@ -21,6 +21,6 @@
                 
             </div>
         </div>
-    </div><!--end content-->
+    </div>
     @endforeach
-</div><!--end grid-->
+</div>

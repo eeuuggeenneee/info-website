@@ -20,6 +20,6 @@
                 
             </div>
         </div>
-    </div><!--end content-->
+    </div>
     @endforeach
 </div>

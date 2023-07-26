@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Techwind - Tailwind CSS Multipurpose Landing Page Template</title>
+    <title>Contact | Biochem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Tailwind CSS Saas & Software Landing Page Template">
     <meta name="keywords"
@@ -15,12 +15,10 @@
     <meta name="version" content="1.9.5">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-    <!-- Css -->
     <link href="{{ asset('assets/libs/tobii/css/tobii.min.css') }}" rel="stylesheet">
-    <!-- Main Css -->
+
     <link href="{{ asset('assets/libs/%40iconscout/unicons/css/line.css') }}" type="text/css" rel="stylesheet">
     <link href="{{ asset('assets/libs/%40mdi/font/css/materialdesignicons.min.css') }}" rel="stylesheet"
         type="text/css">
@@ -29,22 +27,13 @@
 </head>
 
 <body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
-    <!-- Loader Start -->
-    <!-- <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div> -->
-    <!-- Loader End -->
 
 
-    <!-- Start Navbar -->
+
+
     <nav id="topnav" class="defaultscroll is-sticky">
         <div class="container relative">
-            <!-- Logo container-->
+ 
             <a class="logo" href="index-2.html">
                 <span class="inline-block dark:hidden">
                     <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
@@ -53,10 +42,8 @@
                 <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
             </a>
 
-            <!-- End Logo container-->
             <div class="menu-extras">
                 <div class="menu-item">
-                    <!-- Mobile menu toggle-->
                     <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
                         <div class="lines">
                             <span></span>
@@ -64,38 +51,12 @@
                             <span></span>
                         </div>
                     </a>
-                    <!-- End mobile menu toggle-->
                 </div>
             </div>
 
-            <!--Login button Start-->
-            {{-- <ul class="buy-button list-none mb-0">
-                <li class="inline mb-0">
-                    <a href="#">
-                        <span class="login-btn-primary"><span
-                                class="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600/5 hover:bg-indigo-600 border border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white"><i
-                                    data-feather="settings" class="h-4 w-4"></i></span></span>
-                        <span class="login-btn-light"><span
-                                class="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 border hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i
-                                    data-feather="settings" class="h-4 w-4"></i></span></span>
-                    </a>
-                </li>
-
-                <li class="inline ps-1 mb-0">
-                    <a href="https://1.envato.market/techwind" target="_blank">
-                        <div class="login-btn-primary"><span
-                                class="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border border-indigo-600 hover:border-indigo-700 text-white"><i
-                                    data-feather="shopping-cart" class="h-4 w-4"></i></span></div>
-                        <div class="login-btn-light"><span
-                                class="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 border hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i
-                                    data-feather="shopping-cart" class="h-4 w-4"></i></span></div>
-                    </a>
-                </li>
-            </ul> --}}
-            <!--Login button End-->
+          
 
             <div id="navigation">
-                <!-- Navigation Menu-->
                 <ul class="navigation-menu nav-light">
                     <li><a href="{{ route('home') }}" class="sub-menu-item">Home</a></li>
 
@@ -106,16 +67,10 @@
 
                     <li><a href="{{ route('contact') }}" class="sub-menu-item">Contact</a></li>
                 </ul>
-                <!--end navigation menu-->
             </div>
-            <!--end navigation-->
         </div>
-        <!--end container-->
     </nav>
-    <!--end header-->
-    <!-- End Navbar -->
 
-    <!-- Start Hero -->
     <section
         class="relative table w-full py-36 bg-[url('../../assets/images/company/aboutus.html')] bg-center bg-no-repeat bg-cover">
         <div class="absolute inset-0 bg-black opacity-75"></div>
@@ -124,9 +79,7 @@
                 <h3 class="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
                     Contact Us</h3>
             </div>
-            <!--end grid-->
         </div>
-        <!--end container-->
 
         <div class="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
             <ul class="tracking-[0.5px] mb-0 inline-block">
@@ -139,7 +92,6 @@
             </ul>
         </div>
     </section>
-    <!--end section-->
     <div class="relative">
         <div
             class="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden z-1 text-white dark:text-slate-900">
@@ -149,9 +101,6 @@
             </svg>
         </div>
     </div>
-    <!-- End Hero -->
-
-    <!-- Start Section-->
     <section class="relative md:py-24 py-16">
         <div class="container relative">
             <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
@@ -211,9 +160,7 @@
                     </div>
                 </div>
             </div>
-            <!--end grid-->
         </div>
-        <!--end container-->
 
         <div class="container relative md:mt-24 mt-16">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
@@ -290,10 +237,7 @@
                 </div>
             </div>
         </div>
-        <!--end container-->
     </section>
-    <!--end section-->
-    <!-- End Section-->
 
     <div class="container-fluid relative">
         <div class="grid grid-cols-1">
@@ -303,11 +247,8 @@
                     style="border:0" class="w-full h-[500px]" allowfullscreen></iframe>
             </div>
         </div>
-        <!--end grid-->
     </div>
-    <!--end container-->
 
-    <!-- Footer Start -->
     <footer class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200">
         <div class="container relative">
             <div class="grid grid-cols-12">
@@ -352,9 +293,7 @@
                                             class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
                                                 class="uil uil-file align-middle" title="customization"></i></a></li>
                                 </ul>
-                                <!--end icon-->
                             </div>
-                            <!--end col-->
 
                             <div class="lg:col-span-2 md:col-span-4">
                                 <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5>
@@ -382,7 +321,6 @@
                                                 class="uil uil-angle-right-b"></i> Login</a></li>
                                 </ul>
                             </div>
-                            <!--end col-->
 
                             <div class="lg:col-span-3 md:col-span-4">
                                 <h5 class="tracking-[1px] text-gray-100 font-semibold">Usefull Links</h5>
@@ -404,7 +342,6 @@
                                                 class="uil uil-angle-right-b"></i> Widget</a></li>
                                 </ul>
                             </div>
-                            <!--end col-->
 
                             <div class="lg:col-span-3 md:col-span-4">
                                 <h5 class="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
@@ -427,16 +364,11 @@
                                     </div>
                                 </form>
                             </div>
-                            <!--end col-->
                         </div>
-                        <!--end grid-->
                     </div>
-                    <!--end col-->
                 </div>
             </div>
-            <!--end grid-->
         </div>
-        <!--end container-->
 
         <div class="py-[30px] px-0 border-t border-slate-800">
             <div class="container relative text-center">
@@ -463,21 +395,14 @@
                                     class="max-h-6 inline" title="Visa" alt=""></a></li>
                     </ul>
                 </div>
-                <!--end grid-->
             </div>
-            <!--end container-->
         </div>
     </footer>
-    <!--end footer-->
-    <!-- Footer End -->
 
-    <!-- Back to top -->
     <a href="#" onclick="topFunction()" id="back-to-top"
         class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-indigo-600 text-white leading-9"><i
             class="uil uil-arrow-up"></i></a>
-    <!-- Back to top -->
 
-    <!-- Switcher -->
     <div class="fixed top-[30%] -right-2 z-50">
         <span class="relative inline-block rotate-90">
             <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
@@ -491,25 +416,19 @@
             </label>
         </span>
     </div>
-    <!-- Switcher -->
 
-    <!-- LTR & RTL Mode Code -->
     <div class="fixed top-[40%] -right-3 z-50">
         <a href="#" id="switchRtl">
             <span id="directionText" class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold">LTR</span>
         </a>
     </div>
-    <!-- LTR & RTL Mode Code -->
 
-    <!-- JAVASCRIPTS -->
     <script src="{{ asset('assets/libs/tobii/js/tobii.min.js') }}"></script>
     <script src="{{ asset('assets/libs/feather-icons/feather.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins.init.js') }}"></script>
     <script src="{{ asset('assets/js/app.js') }}"></script>
-    <!-- JAVASCRIPTS -->
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-            // Theme toggle
             if (localStorage.getItem('theme') === 'dark') {
                 document.documentElement.classList.add('dark');
                 document.getElementById('chk').checked = true;
@@ -517,7 +436,6 @@
                 document.documentElement.classList.remove('dark');
             }
     
-            // Direction toggle
             if (localStorage.getItem('direction') === 'rtl') {
                 document.documentElement.setAttribute('dir', 'rtl');
                 document.getElementById('directionText').textContent = 'RTL';
