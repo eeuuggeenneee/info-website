@@ -495,7 +495,6 @@
         
        
         
-        <!-- JAVASCRIPTS -->
     </body>
 
 </html>
